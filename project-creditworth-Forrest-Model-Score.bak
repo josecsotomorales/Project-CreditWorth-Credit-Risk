@@ -1,0 +1,389 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="30" y="18" width="300" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Data Preparation</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="342" y="18" width="348" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Applying Forrest Model and Scoring new Customers ]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">\\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>credit-data-training.xlsx
+Table=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Credit-Application-Result" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Account-Balance" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Duration-of-Credit-Month" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Payment-Status-of-Previous-Credit" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Purpose" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Credit-Amount" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Value-Savings-Stocks" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Length-of-current-employment" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Instalment-per-cent" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Guarantors" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Duration-in-Current-address" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Most-valuable-available-asset" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Age-years" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Concurrent-Credits" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Type-of-apartment" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="No-of-Credits-at-this-Bank" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Occupation" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="No-of-dependents" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Telephone" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Foreign-Worker" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">\\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>customers-to-score.xlsx
+Table=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Account-Balance" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Duration-of-Credit-Month" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Payment-Status-of-Previous-Credit" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Purpose" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Credit-Amount" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Value-Savings-Stocks" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Length-of-current-employment" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Instalment-per-cent" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Guarantors" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Duration-in-Current-address" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Most-valuable-available-asset" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Age-years" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Concurrent-Credits" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Type-of-apartment" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="No-of-Credits-at-this-Bank" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Occupation" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="No-of-dependents" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Telephone" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Foreign-Worker" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Guarantors" selected="False" />
+            <SelectField field="Duration-in-Current-address" selected="False" />
+            <SelectField field="Concurrent-Credits" selected="False" />
+            <SelectField field="Type-of-apartment" selected="False" />
+            <SelectField field="No-of-dependents" selected="False" />
+            <SelectField field="Telephone" selected="False" />
+            <SelectField field="Foreign-Worker" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="258" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF IsNull([Age-years]) THEN 33 ELSE [Age-years] ENDIF" field="Age-years" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Age-years = IF IsNull([Age-years]) THEN 33 ELSE [Age-years] ENDIF
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings>
+        <Position x="390" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Model Name">FM_CREDITWORTH</Value>
+          <Value name="Y Var">Credit-Application-Result</Value>
+          <Value name="X Vars">Account-Balance + Duration-of-Credit-Month + Payment-Status-of-Previous-Credit + Purpose + Credit-Amount + Value-Savings-Stocks + Length-of-current-employment + Instalment-per-cent + Most-valuable-available-asset + Age-years + No-of-Credits-at-this-Bank + Occupation</Value>
+          <Value name="Num Trees">500</Value>
+          <Value name="Custom Num Vars">False</Value>
+          <Value name="Num Vars">3</Value>
+          <Value name="model.size">False</Value>
+          <Value name="total.nodes">100</Value>
+          <Value name="max.depth">10</Value>
+          <Value name="node.size">5</Value>
+          <Value name="replace">True</Value>
+          <Value name="samp.rate">100</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Forest_Model.yxmc" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JOSECA~1\AppData\Local\Temp\Engine_8828_e9c9e0cad08046598ba41671f9a75988_\Engine_2452_d6edb2bcd63f45fcb13753046d7a058e_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="Score">
+        <Position x="474" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">CREDITWORTH</Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="582" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">\\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\PROJECT - 3 Creditworthiness\Predicted-Customers-Solution.xlsx|||Customers</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Predicted-Customers-Solution.xlsx
+Table=Customers</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="13" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Reports" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>project-creditworth-Forrest-Model-Score</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
